@@ -28,7 +28,7 @@ def parser():
         cmd.add_argument("--roles-dir", type=Path, default=Path("roles"))
         cmd.add_argument(
             "--question",
-            default="2027년 4월 전후 11억 이하 후보의 매수와 임대 유지 조건을 비교하고, "
+            default="2027년 4월 전후 12억 5천만 원 이하 후보의 매수와 임대 유지 조건을 비교하고, "
             "현재 가격의 24·36개월 기본가치 선반영과 판단 변경 조건을 검증하라.",
         )
         cmd.add_argument("--scenario", type=Path)

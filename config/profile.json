@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1",
   "provenance": "housing_research_harness_v0_1.md; user conditions require reconfirmation",
-  "max_purchase_price_krw": 1100000000,
+  "max_purchase_price_krw": 1250000000,
   "transaction_costs_included_in_budget": null,
   "commute_destinations": ["판교", "신사"],
   "current_home": "잠원동 신반포2차",
