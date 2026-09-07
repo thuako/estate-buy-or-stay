@@ -1,0 +1,16 @@
+repository = "thuako/estate-buy-or-stay"
+research_as_of = "2026-09-07"
+max_parallel = 3
+max_agent_calls = 24
+max_tool_calls = 60
+max_wall_seconds = 1800
+task_timeout_seconds = 300
+max_attempts = 3
+max_discussion_rounds = 2
+poll_seconds = 20
+allowed_github_users = ["thuako", "thuako-furiosa"]
+# model = "your-available-codex-model"
+
+# Optional real GitHub identities for notifications. Logical @agent-role tags
+# work without seven separate GitHub accounts.
+[github_logins]

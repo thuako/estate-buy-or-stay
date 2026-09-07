@@ -1,0 +1,58 @@
+{
+  "description": "Synthetic arithmetic fixture only. All prices, returns, fees, and loan assumptions are invented, not current market observations or Korean tax/lending rules.",
+  "valuation": {
+    "period_months": 12,
+    "snapshots": {
+      "0": {"net_rents_krw": [24000000, 25000000, 26000000, 27000000, 28000000], "discount_rates": ["0.05", "0.05", "0.05", "0.05", "0.05"], "terminal_value_krw": 1000000000},
+      "24": {"net_rents_krw": [26000000, 27000000, 28000000, 29000000, 30000000], "discount_rates": ["0.05", "0.05", "0.05", "0.05", "0.05"], "terminal_value_krw": 1100000000},
+      "36": {"net_rents_krw": [27000000, 28000000, 29000000, 30000000, 31000000], "discount_rates": ["0.05", "0.05", "0.05", "0.05", "0.05"], "terminal_value_krw": 1150000000}
+    }
+  },
+  "pricing_horizon": {
+    "current_price_krw": 1000000000,
+    "paths_krw": {
+      "low_assumption": {"0": 750000000, "12": 780000000, "24": 820000000, "36": 850000000, "60": 930000000},
+      "base_assumption": {"0": 900000000, "12": 920000000, "24": 970000000, "36": 1020000000, "60": 1100000000},
+      "high_assumption": {"0": 950000000, "12": 990000000, "24": 1050000000, "36": 1100000000, "60": 1200000000}
+    }
+  },
+  "stock": {
+    "initial_stock": 10000,
+    "flows": [
+      {"period": "year_1", "completions": 300, "demolitions": 100, "net_conversions": 0, "available_vacant_units": 150},
+      {"period": "year_2", "completions": 250, "demolitions": 150, "net_conversions": -20, "available_vacant_units": 120},
+      {"period": "year_3", "completions": 200, "demolitions": 80, "net_conversions": 10, "available_vacant_units": 100}
+    ]
+  },
+  "household": {
+    "horizon_months": 60,
+    "lease_end_month": 7,
+    "initial_liquid_assets_krw": 1200000000,
+    "rental_deposit_krw": 500000000,
+    "deposit_available_month": 7,
+    "existing_debt_krw": 0,
+    "existing_debt_terminal_krw": 0,
+    "monthly_nonhousing_surplus_krw": 4000000,
+    "monthly_rent_krw": 1000000,
+    "monthly_ownership_cost_krw": 300000,
+    "investment_monthly_rate": "0.002",
+    "mortgage_principal_krw": 400000000,
+    "mortgage_monthly_rate": "0.003333333333333333",
+    "mortgage_term_months": 360,
+    "purchase_cost_rate": "0.03",
+    "purchase_fixed_cost_krw": 1000000,
+    "sale_cost_rate": "0.005",
+    "sale_fixed_cost_krw": 0,
+    "moving_cost_krw": 2000000,
+    "house_price_path_krw": {"0": 1000000000, "7": 1010000000, "24": 1040000000, "36": 1070000000, "60": 1120000000},
+    "affordability": {
+      "annual_household_income_krw": 120000000,
+      "lender_confirmed_borrowing_capacity_krw": 500000000,
+      "monthly_housing_payment_limit_krw": 4000000,
+      "emergency_reserve_krw": 50000000,
+      "max_purchase_price_krw": 1100000000,
+      "transaction_costs_included_in_budget": true
+    }
+  },
+  "break_even": {"lower_price_krw": 800000000, "upper_price_krw": 1300000000, "tolerance_krw": 1000, "max_iterations": 60}
+}

@@ -1,0 +1,20 @@
+name: 에이전트 연구 논의
+description: 기존 연구 run의 이슈에서 이 새 이슈를 링크하고 역할 태그로 논의합니다.
+title: '[Discussion] '
+labels: ['harness', 'kind:discussion']
+body:
+  - type: textarea
+    id: context
+    attributes:
+      label: 연구 run과 주장
+      description: 상위 run 이슈 번호, 주장 ID, 원문 근거를 적어 주세요.
+    validations:
+      required: true
+  - type: textarea
+    id: request
+    attributes:
+      label: 논의할 역할과 질문
+      description: 이 하네스는 등록된 run/역할/자동 생성 논의 이슈를 폴링합니다. 해당 이슈 댓글에도 이 링크와 역할 태그를 남겨 주세요.
+      placeholder: '@agent-policy @agent-market 이 주장에 사용한 정책이 실제 시행 중인지 확인해 주세요.'
+    validations:
+      required: true
